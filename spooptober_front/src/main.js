@@ -8,7 +8,7 @@ import router from './router'
 
 const app = createApp(App)
 
-require('@/assets/main.scss')
+import '@/assets/scss/styles.scss'
 
 app.use(createPinia())
 app.use(router)

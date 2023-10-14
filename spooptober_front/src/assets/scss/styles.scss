@@ -1,1 +1,18 @@
-@import "~bulma";
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../node_modules/bulma/sass/utilities/functions";
+
+$main: black;
+$second: red;
+
+$primary: $main;
+$info: $second; 
+
+
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
+
+// Use the new serif family
+$family-primary: $family-serif;
+
+
+@import '../node_modules/bulma/bulma.sass';
