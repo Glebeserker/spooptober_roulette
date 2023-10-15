@@ -1,6 +1,10 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 @import "../node_modules/bulma/sass/utilities/functions";
 
+// Import Font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap');
+
+
 $main: black;
 $second: red;
 $third: white;
@@ -8,6 +12,7 @@ $info-link: #771616;
 
 $primary: $main;
 $info: $info-link; 
+$danger: $second;
 
 
 // Add a serif family
@@ -15,6 +20,40 @@ $family-serif: "Inter", "Georgia", serif;
 
 // Use the new serif family
 $family-primary: $family-serif;
+
+// Customizing Navbar Variables
+$navbar-item-img-max-height: 3.5rem;
+$navbar-item-hover-background-color: $second;
+$navbar-item-color: $third;
+$navbar-item-hover-color: $third;
+$navbar-item-active-color: $third;
+$navbar-item-active-background-color: $second;
+
+:root{
+    background-color: $main;
+
+
+}
+
+#app{
+    min-height: 100vh;
+    
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+.has-navbar-fixed-top{
+    padding-top: 5rem !important;
+}
+
+// Custom Paddings and Margins
+.mb-7{
+    margin-bottom: 4rem !important;
+}
 
 
 @import '../node_modules/bulma/bulma.sass';
