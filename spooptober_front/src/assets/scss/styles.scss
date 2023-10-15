@@ -3,13 +3,15 @@
 
 $main: black;
 $second: red;
+$third: white;
+$info-link: #771616;
 
 $primary: $main;
-$info: $second; 
+$info: $info-link; 
 
 
 // Add a serif family
-$family-serif: "Merriweather", "Georgia", serif;
+$family-serif: "Inter", "Georgia", serif;
 
 // Use the new serif family
 $family-primary: $family-serif;
