@@ -60,7 +60,7 @@ const dummy_top_movie = {
 <div class="columns" id="HomeMoviesWrap">
     <div class="column is-1 is-hidden-mobile"></div>
     <div class="column is-10 has-text-white" id="HomeChild">
-        <h2 class="title is-4 has-text-centered has-text-white mb-7" id="MoviesWrapHeader">
+        <h2 class="title is-4 is-5-mobile has-text-centered has-text-white mb-7" id="MoviesWrapHeader">
             TOP HORROR MOVIES
         </h2>
         <div class="columns is-multiline is-variable is-5 mt-2" id="HomeBoxesWrap">

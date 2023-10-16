@@ -5,7 +5,7 @@
 <template>
     <div class="columns is-multiline" id="homeIntroWrap">
         <div class="column is-12 mt-2 mb-6">
-            <h1 class="title is-3 has-text-centered has-text-white">SPOOKTOBER ROULETTE</h1>
+            <h1 class="title is-3 is-spaced has-text-centered has-text-white">SPOOKTOBER ROULETTE</h1>
         </div>
         <div class="column is-1 is-hidden-mobile"></div>
         <div class="column is-5 is-5-desktop is-12-mobile has-text-danger is-10-tablet" id="introPara">
