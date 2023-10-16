@@ -18,7 +18,7 @@
                     Roulette
                 </RouterLink>
                 <RouterLink to="/" class="navbar-item">
-                    Search Bar Goes Here
+                    <font-awesome-icon :icon="['fas', 'magnifying-glass']" style="color: #ffff"/>  Search
                 </RouterLink>
             </div>
         </div>

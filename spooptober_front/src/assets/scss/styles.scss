@@ -37,6 +37,12 @@ $navbar-item-active-background-color: $second;
 
 #app{
     min-height: 100vh;
+
+
+    @media (max-width: 800px) {
+        margin-bottom: 5rem;
+    }
+
     
     footer{
         position: fixed;
