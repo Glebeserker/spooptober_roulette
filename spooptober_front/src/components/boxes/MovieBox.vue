@@ -9,7 +9,7 @@ const props = defineProps(['movieData'])
         <div :style="{ background: 'url(' + movieData.img + ') lightgray 50% / cover no-repeat' }" class="boxParent">
         <div class="columns is-multiline boxChild">
             <div class="column is-12">
-                <h3 class="title is-5 has-text-centered has-text-white pt-3 pb-3">{{ movieData.Name }}</h3>
+                <h3 class="title is-5 has-text-centered has-text-white pt-3 pb-3 is-spaced boxHeading">{{ movieData.Name }}</h3>
             </div>
             <div class="column is-12 movieBoxInfo">
                 <p>
@@ -44,7 +44,7 @@ const props = defineProps(['movieData'])
         border: 1px solid white;
 
         .boxChild{
-            backdrop-filter: blur(0.75px);
+            backdrop-filter: blur(0.85px);
         }
     
         
@@ -70,10 +70,14 @@ const props = defineProps(['movieData'])
 }
 
 .movieBoxInfo{
-    padding-left: 1.5rem;
-    font-weight: 800;
-    -webkit-text-stroke: 0.2px black;
+    padding-left: 2.2rem;
+    font-weight: 600;
+    -webkit-text-stroke: 0.3px black;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
+.boxHeading{
+    -webkit-text-stroke: 0.3px black;
+}
 </style>
