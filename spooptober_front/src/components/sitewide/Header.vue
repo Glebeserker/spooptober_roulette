@@ -14,7 +14,7 @@
                 <RouterLink to="/" class="navbar-item">
                     Genres
                 </RouterLink>
-                <RouterLink to="/" class="navbar-item">
+                <RouterLink to="create-roulette" class="navbar-item">
                     Roulette
                 </RouterLink>
                 <RouterLink to="/" class="navbar-item">
