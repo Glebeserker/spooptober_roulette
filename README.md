@@ -1,5 +1,7 @@
 # spooptober_roulette
-A Web App that allows to add movies to select roulette to decide what to watch
+A Web App that allows to add movies to select roulette to decide what to watch. Pulls data by requesting data from TMDB API. 
+Selected Movies will be added to instance group of users that will use rng (spin-wheel) to decide what to watch.
+Will remove selected movie from the list, so can return to the session at a later date and continue your Spooky Marathon.
 
 Design Concept
 
