@@ -4,6 +4,7 @@ Selected Movies will be added to instance group of users that will use rng (spin
 Will remove selected movie from the list, so can return to the session at a later date and continue your Spooky Marathon.
 
 Design Concept
+(Placeholder images generated with DALL-E)
 
 Mobile Landing:
 
