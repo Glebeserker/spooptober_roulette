@@ -16,6 +16,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "axios": "^1.5.1",
     "bulma": "^0.9.4",
+    "firebase": "^10.5.0",
     "pinia": "^2.1.6",
     "sass": "^1.69.2",
     "sass-loader": "^13.3.2",
