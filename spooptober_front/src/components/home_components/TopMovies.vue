@@ -2,57 +2,29 @@
 import { ref, defineProps } from 'vue'
 import MovieBox from '../boxes/MovieBox.vue'
 
-const dummy_top_movie = {
-    0: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_1.jpg",
-        "length": 123
-    },
-    1: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_2.jpg",
-        "length": 123
-    },
-    2: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_1.jpg",
-        "length": 123
-    },
-    3: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_2.jpg",
-        "length": 123
-    },
-    4: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_1.jpg",
-        "length": 123
-    },
-    5: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_2.jpg",
-        "length": 123
-    },
-    6: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_1.jpg",
-        "length": 123
-    },
-    7: {
-        "Name": "Title",
-        "Rating": 7,
-        "img": "/Poster_2.jpg",
-        "length": 123
-    }
-}
 
+let movieDatas = ref(null)
+let isLoading = ref(true)
+
+
+const url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=27';
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer TOKEN'
+  }
+};
+
+fetch(url, options)
+  .then(res => res.json())
+  .then(data => {
+    movieDatas = data['results'];
+    isLoading.value = false;
+    })
+  .catch(err => {
+    console.error('error:' + err);
+});
 
 </script>
 
@@ -63,8 +35,11 @@ const dummy_top_movie = {
         <h2 class="title is-4 is-5-mobile has-text-centered has-text-white mb-7" id="MoviesWrapHeader">
             TOP HORROR MOVIES
         </h2>
-        <div class="columns is-multiline is-variable is-5 mt-2" id="HomeBoxesWrap">
-                <MovieBox v-for="item in dummy_top_movie" :movieData="item" />
+        <div class="columns is-multiline is-variable is-5 mt-2 is-centered" id="HomeBoxesWrap" v-if="!isLoading">
+                <MovieBox v-for="item in movieDatas" :movieData="item" />
+        </div>
+        <div v-else>
+            Loading....
         </div>
     </div>
     <div class="column is-1 is-hidden-mobile"></div>

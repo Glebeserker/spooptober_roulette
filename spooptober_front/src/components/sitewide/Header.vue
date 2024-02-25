@@ -17,8 +17,9 @@
                 <RouterLink to="create-roulette" class="navbar-item">
                     Roulette
                 </RouterLink>
+                <Router-Link to="/" class="navbar-item">Login</Router-Link>
                 <RouterLink to="/" class="navbar-item">
-                    <font-awesome-icon :icon="['fas', 'magnifying-glass']" style="color: #ffff"/>  Search
+                    <font-awesome-icon :icon="['fas', 'magnifying-glass']" style="color: red"/>  Search
                 </RouterLink>
             </div>
         </div>
